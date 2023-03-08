@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="style.css">
+
+<header>
+  
+  </header>
+
+<body>
+
+
+    <div id="html-spinner"></div>
+    <p id="html-para">Loader</p>
+
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  //Removing article link when on mobiforge
+  console.log(document.referrer);
+  if (parent !== window && document.referrer.indexOf('https://mobiforge.com') === 0 && document.referrer.indexOf('http://mobiforge.com') === 0)
+  {  
+    console.log(document.referrer);
+    document.getElementById('article-link').className = "fade-out";
+  }
+
+});
+
+
+</script>
+
+</body>
+
+</html>
