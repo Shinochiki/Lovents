@@ -1,9 +1,0 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-	<title>Tate</title>
-	<defs>
-		<image  width="24" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYAQMAAADaua+7AAAAAXNSR0IB2cksfwAAAAZQTFRFAAAAAAAApWe5zwAAAAJ0Uk5TAP9bkSK1AAAAUklEQVR4nGNggALGAwwM7EDMD8TyDUAMpG2B2BKEHzAwWHxgYDD4AaRreBgs7P8wWPD/YbBh/sMgw2DDIMdQwcDf+IGB/f8DBub/QA3/YaYyAACVZBT7An7WywAAAABJRU5ErkJggg=="/>
-	</defs>
-	<style>
-	</style>
-	<use id="Background" href="#img1" x="0" y="0"/>
-</svg>

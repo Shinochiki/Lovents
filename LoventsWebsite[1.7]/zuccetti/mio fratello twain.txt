@@ -1,3 +1,0 @@
-per mobile: 
-levare il margin top 4 dalla griglia twain
-pensare a mio fratello twain nella griglia granpa_twain
