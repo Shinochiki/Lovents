@@ -1,9 +1,0 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-	<title>Andrew</title>
-	<defs>
-		<image  width="20" height="20" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUBAMAAAB/pwA+AAAAAXNSR0IB2cksfwAAABJQTFRFAAAA9EYR20MV82xDAAAA/xgAMDq4lQAAAAZ0Uk5TAP///xD/o58P3QAAAGpJREFUeJxVT8ENwCAIRHEA03SAVuLfmPbfrmDC/qsUSjTKQ86DgwNAwkXo4Q/L+CgbLoF1V+Ile1IyIhRirtKmorsSmxAbQC4/1KRf2GKWom/unOHUsMg892G2wsNYjNuwgzRMurJaHwd96XINaI/MeuYAAAAASUVORK5CYII="/>
-	</defs>
-	<style>
-	</style>
-	<use id="Background" href="#img1" x="2" y="2"/>
-</svg>
