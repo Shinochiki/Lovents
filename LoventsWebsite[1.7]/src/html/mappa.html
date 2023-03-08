@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <title>Lovents</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/src/css/style.css">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+  <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/maps.css" type="text/css">
+  <link rel="shortcut icon" href="/zuccetti/Lovents_logo (2).png" type="image/x-icon">
+  <script src="/src/js/MapsCreator.js"></script>
+  <script src="/src/js/ReaderAndRouting.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="header" style="background-color:#0022ff">
+      <div class="header__content">
+        <a class="header__logo" href="#">
+          <h2><span style="color:orange">LO</span>VENTS</h2>
+        </a>
+        <ul class="header__menu">
+          <li><a href="/src/html/index.html">Home</a></li>
+          <li><a href="/src/html/mappa.html">Mappa</a></li>
+          <li><a href="#">Eventi</a></li>
+          <li><a href="#" class="contatto">Contatti</a></li>
+        </ul>
+        <div class="header__quick">
+          <a href="/src/html/login.html" class="sign_in">Accedi</a>
+          <div class="icon-hamburger">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="logo"></div>
+
+
+
+    <div id="mapid"></div>
+    <script>
+      Contenitore();
+      DisegnaChiaro();
+    </script>
+
+    <div class="apertura-side">
+      <div class="mini-side">
+        <div class="open-side">
+          <img src="/icone/arrow_left_1x.png" alt="open">
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar close">
+      <div class="sezione-icone">
+        <div class="Account" style="display: flex;justify-content: center; align-items: center;">
+          <img src="/icone/user (1).png" alt="" class="profile">
+        </div>
+        <div class="Info" style="display: flex;justify-content: center; align-items: center;">
+          <img src="/icone/help12.png" alt="" class="info">
+        </div>
+        <div class="Impostazioni" style="display: flex;justify-content: center; align-items: center;">
+          <img src="/icone/options12.png" alt="impostazioni" class="setting" style="width: 60px; height: 60px;">
+        </div>
+        <div class="Chiusura">
+          <h3>X</h3>
+        </div>
+      </div>
+      <div class="section1">
+        <div class="titolo-sec1">
+          <h3>PUBS & BAR</h3>
+          <button class="sec1">Visualizza</button>
+          <button class="chiudi-sec1">chiudi</button>
+        </div>
+        <div class="card-sec1">
+          <div class="immagine-card-sec1"></div>
+          <div class="descrizione-card-sec1">
+            <h3>Bar Petrarca</h3>
+            <h4>Località Viale Petrarca, 1.</h4>
+            <p id="time1">
+              <script> document.getElementById("time1").innerHTML = Events.LaPetrarca[3]; </script>
+            </p>
+          </div>
+          <button id="LaPetrarcaButton" data-name="LaPetrarca" onclick="LocationSelecter('LaPetrarca')">
+            Routing
+          </button>
+          <button id="LaPetrarcaButton" data-name="LaPetrarca" onclick="RemoveRouting()"> Implosione
+          </button>
+
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="section1">
+        <div class="titolo-sec1">
+          <h3>COMICI</h3>
+          <button class="sec2">Visualizza</button>
+          <button class="chiudi-sec2">chiudi</button>
+        </div>
+        <div class="card-sec2">
+          <div class="immagine-card-sec2"></div>
+          <div class="descrizione-card-sec2">
+            <h3>Bar Petrarca</h3>
+            <h4>Località Viale Petrarca, 1.</h4>
+            <p>Aperto dalle 18:00 fino alle 01:00.</p>
+          </div>
+        </div>
+
+
+        <div class="card-sec2">
+          <div class="immagine-card-sec2"></div>
+          <div class="descrizione-card-sec2">
+            <h3>Bar Petrarca</h3>
+            <h4>Località Viale Petrarca, 1.</h4>
+            <p>Aperto dalle 18:00 fino alle 01:00.</p>
+          </div>
+        </div>
+
+        <div class="card-sec2">
+          <div class="immagine-card-sec2"></div>
+          <div class="descrizione-card-sec2">
+            <h3>Bar Petrarca</h3>
+            <h4>Località Viale Petrarca, 1.</h4>
+            <p>Aperto dalle 18:00 fino alle 01:00.</p>
+          </div>
+        </div>
+
+        <div class="card-sec2">
+          <div class="immagine-card-sec2"></div>
+          <div class="descrizione-card-sec2">
+            <h3>Bar Petrarca</h3>
+            <h4>Località Viale Petrarca, 1.</h4>
+            <p>Aperto dalle 18:00 fino alle 01:00.</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="feedback">
+      <img src="/icone/strunz.png" alt="" class="visualizza chiaro">
+      <img src="/icone/icona messaggio.png" alt="" class="close scuro">
+    </div>
+    <button type="button" class="rr" onclick="CambioColore()"></button>
+    <div class="arrow">
+      <img src="/" alt="" class="visualizza chiaro">
+    </div>
+    <div class="prefered">
+      <img src="/icone/venturiniOrange.png" alt="" class="visualizza chiaro">
+      <img src="/icone/venturini.png" alt="" class="close scuro">
+    </div>
+  </div>
+
+
+  </div>
+
+  <script>
+
+    $(".rr").click(function () {
+      $(".logo").toggleClass("colore");
+      $(".rr").toggleClass("sole");
+      $(".rr").toggleClass("sole");
+      $(".arrow").toggleClass("light");
+      $(".prefered").toggleClass("white");
+      $(".chiaro").toggleClass("visualizza");
+      $(".chiaro").toggleClass("close");
+      $(".scuro").toggleClass("close");
+      $(".scuro").toggleClass("visualizza");
+    });
+
+    let item = document.querySelector('.icon-hamburger');
+    item.addEventListener("click", function () {
+      document.body.classList.toggle('menu-open');
+    });
+
+
+    $(".contatto").click(function () {
+      $(".container-popup").addClass("display");
+
+    });
+
+    $(".contatto").click(function () {
+      $("body").addClass("opacity");
+
+    });
+
+    $(".chiusura").click(function () {
+      $(".container-popup").removeClass("display");
+
+    });
+
+    $(".chiusura").click(function () {
+      $("body").removeClass("opacity");
+    });
+
+    $(".header__menu li a").click(function () {
+      $("body").removeClass("menu-open");
+
+    });
+
+    $(".sec1").click(function () {
+      $(".card-sec1").addClass("visualizza");
+
+    });
+
+    $(".chiudi-sec1").click(function () {
+      $(".card-sec1").removeClass("visualizza");
+
+    });
+
+    $(".sec2").click(function () {
+      $(".card-sec2").addClass("visualizza");
+
+    });
+
+    $(".chiudi-sec2").click(function () {
+      $(".card-sec2").removeClass("visualizza");
+
+    });
+
+    $(".Chiusura h3").click(function () {
+      $(".sidebar").addClass("close");
+    });
+
+    $(".open-side img").click(function () {
+      $(".sidebar").removeClass("close");
+    });
+
+
+
+
+  </script>
+</body>
